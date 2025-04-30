@@ -1,12 +1,15 @@
 # Python Selenium BDD+POM Framework
 
-A robust automation framework developed in Python using Selenium, Pytest, and Behave, combining Behavior-Driven Development (BDD) with the Page Object Model (POM) design pattern. Integrated  Allure for detailed reporting. Designed to automate UI test cases for Swag Labs demo website.
+A robust automation framework developed in Python using Selenium, Pytest, and Behave, combining Behavior-Driven Development (BDD) with the Page Object Model (POM) design pattern.Designed to automate UI test cases for Swag Labs demo website.
 
 ## Features
 
 * Page Object Model (POM) design pattern
 * Behavior-Driven Development (BDD) with Gherkin syntax
-* Allure reports with screenshots at every test step
+* Configuration management with config.ini
+* Cross-browser testing support (Chrome, Firefox, Edge)
+* Modular and maintainable test architecture
+* Utilities for logging and configuration
 
 
 ## Prerequisites
@@ -66,9 +69,16 @@ choco install allure-commandline
 Python-Selenium-BDD-POM/
 ├── features/              
 │   ├── steps/              # Step definitions for BDD scenarios
+│   ├── environment.py      # Behave hooks for setup and teardown
+│   └── *.feature           # Feature files with Gherkin scenarios
+├── utilities/
+│   ├── config_reader.py    # Utilities for reading configuration
+│   └── generating_logs.py  # Logging utilities
+├── configurations/
+│   └── config.ini          # Test configuration file
 ├── allure-results/         # Allure results directory
 ├── reports/                # Generated test reports
-├── setup_check.py          # Environment verification script
+├── Requirements.txt        # Python dependencies
 └── Testcases-SwagLabs.xlsx # Manual test scenarios
 ```
 
