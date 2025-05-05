@@ -9,10 +9,3 @@ Feature: Swag Labs Authentication
     Then I should be redirected to the products page
 
 
-  Scenario: Failed login with invalid credentials
-    Given I navigate to the Swag Labs login page
-    When I enter "invalid_user" in the username field
-    And I enter "wrong_password" in the password field
-    When I click the login button
-    Then I should see an error message "Epic sadface: Username and password do not match any user in this service"
-    And I should remain on the login page

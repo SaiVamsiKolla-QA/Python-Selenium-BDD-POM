@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "python-selenium-bdd-pom"
+version = "1"
+description = "A robust automation framework using Selenium, Behave, and Page Object Model pattern for web testing"
+authors = ["VamsiKolla-QA <saivamsikolla@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+selenium = ">=4.32.0,<5.0.0"
+behave = ">=1.2.6,<2.0.0"
+pytest = ">=8.3.5,<9.0.0"
+allure-pytest = ">=2.14.1,<3.0.0"
+webdriver-manager = ">=4.0.2,<5.0.0"
+pytest-html = ">=4.1.1,<5.0.0"
+pytest-xdist = ">=3.6.1,<4.0.0"
+python-dotenv = ">=1.1.0,<2.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
