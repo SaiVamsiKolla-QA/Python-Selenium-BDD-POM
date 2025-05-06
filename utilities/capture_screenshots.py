@@ -1,6 +1,8 @@
 import os
 from datetime import datetime
 
+import allure
+
 
 def capture_screenshot(driver, test_name=None):
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -14,6 +16,12 @@ def capture_screenshot(driver, test_name=None):
     screenshot = os.path.join(screenshot_dir, f"{name}.png")
     driver.save_screenshot(screenshot)
     print(f"Screenshot saved to: {screenshot}")
-
-    # Return the path for potential use in reports
+    # Attach screenshot to Allure report
+    with open(screenshot, "rb") as file:
+        allure.attach(
+            file.read(),
+            name=name,
+            attachment_type=allure.attachment_type.PNG
+        )
+    # Return the Screeshot
     return screenshot

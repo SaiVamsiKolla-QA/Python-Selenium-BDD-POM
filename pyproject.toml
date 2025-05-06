@@ -17,6 +17,7 @@ webdriver-manager = ">=4.0.2,<5.0.0"
 pytest-html = ">=4.1.1,<5.0.0"
 pytest-xdist = ">=3.6.1,<4.0.0"
 python-dotenv = ">=1.1.0,<2.0.0"
+allure-behave = "^2.14.2"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
