@@ -33,3 +33,12 @@ logs/
 .vscode/
 *.swp
 *.swo
+
+# Ignore screenshots
+assets/screenshots/
+
+# Ignore Allure reports
+Reports/
+reports/
+allure-results/
+allure-report/
