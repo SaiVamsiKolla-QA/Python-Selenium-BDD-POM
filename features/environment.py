@@ -3,6 +3,7 @@ from selenium import webdriver
 
 # Import from project root
 from utilities.generating_logs import generate_logs
+from utilities.capture_screenshots import capture_screenshot
 
 def before_all(context):
     # Set up the logger
