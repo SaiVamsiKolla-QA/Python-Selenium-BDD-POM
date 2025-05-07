@@ -7,12 +7,16 @@ def generate_logs():
     # Get the current working directory
     current_dir = os.getcwd()
 
-    # Create logs directory
-    logs_dir = os.path.join(current_dir, "logs")
+    # Create Test-artifacts directory if it doesn't exist
+    test_artifacts_dir = os.path.join(current_dir, "Test-artifacts")
+    os.makedirs(test_artifacts_dir, exist_ok=True)
+
+    # Create logs directory under Test-artifacts
+    logs_dir = os.path.join(test_artifacts_dir, "logs")
     os.makedirs(logs_dir, exist_ok=True)
 
     # Define log file path
-    log_file_path = os.path.join(logs_dir, "Demo.log")
+    log_file_path = os.path.join(logs_dir, "Swag.log")  # change the file name if need
 
     # Print log location for reference
     print(f"\nLog file location: {log_file_path}\n")
