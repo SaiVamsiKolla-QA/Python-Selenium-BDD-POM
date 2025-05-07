@@ -50,18 +50,9 @@ poetry install
 # Activate the virtual environment
 
 poetry shell
-```
 
-# Running Tests
-```bash
-# Run tests
+# Run your tests
 poetry run behave
-
-# Run tests with Allure reporting
-poetry run behave -f allure_behave.formatter:AllureFormatter -o ./Test-artifacts/Reports
-
-# Generate and open the report
-allure serve ./Test-artifacts/Reports
 ```
 
 ## Install Allure (if needed)
@@ -70,7 +61,8 @@ allure serve ./Test-artifacts/Reports
 
 ```bash
 brew install allure
-`
+```
+
 **Windows (Scoop):**
 
 ```bash
@@ -87,20 +79,15 @@ choco install allure-commandline
 
 ```
 Python-Selenium-BDD-POM/
-├── features/
+├── features/              
 │   ├── Pages/              # Page Object classes
-│   ├── steps/              # Step definitions for BDD scenarios
+│   ├── steps/              # Step definitions for BDD scenarios   ── steps/              # Step definitions for BDD scenarios
 │   ├── environment.py      # Behave hooks for setup and teardown
 │   └── *.feature           # Feature files with Gherkin scenarios
 ├── utilities/
-│   ├── init.py         # Package initialization
-│   ├── screenshot_utils.py # Screenshot capture utilities
-│   ├── log_utils.py        # Logging utilities
-│   └── config_reader.py    # Configuration reader utilities
-├── Test-artifacts/         # Test execution artifacts
-│   ├── Logs/               # Generated log files
-│   ├── Reports/            # Test reports
-│   └── Screenshots/        # Captured screenshots
+│   ├── config_reader.py    # Utilities for reading configuration
+│   └── generating_logs.py  # Logging utilities
+├── logs/                   # Generated logs reports
 ├── pyproject.toml          # Poetry configuration
 ├── poetry.lock             # Poetry lock file (generated)
 └── Testcases-SwagLabs.xlsx # Manual test scenarios
