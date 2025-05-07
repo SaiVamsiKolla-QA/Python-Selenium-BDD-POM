@@ -7,7 +7,7 @@ import allure
 def capture_screenshot(driver, test_name=None):
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     name = f"{test_name}_{timestamp}" if test_name else f"screenshot_{timestamp}"
-    screenshot_dir = os.path.join(os.getcwd(), "assets", "screenshots")
+    screenshot_dir = os.path.join(os.getcwd(), "Test-artifacts", "Screenshots")
     if not os.path.exists(screenshot_dir):
         os.makedirs(screenshot_dir)
     # -------------------------------

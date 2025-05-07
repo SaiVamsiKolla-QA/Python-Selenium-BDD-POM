@@ -1,0 +1,7 @@
+2025-05-06 18:39:26 PM-INFO-Logging initialized
+2025-05-06 18:39:26 PM-INFO-Starting test execution
+2025-05-06 18:39:26 PM-INFO-Starting scenario: Successful login with standard user credentials
+2025-05-06 18:39:28 PM-INFO-Chrome browser launched and navigated to Swag Labs
+2025-05-06 18:39:28 PM-INFO-Entering username: standard_user
+2025-05-06 18:39:28 PM-INFO-Scenario passed: Successful login with standard user credentials
+2025-05-06 18:39:28 PM-INFO-Browser closed

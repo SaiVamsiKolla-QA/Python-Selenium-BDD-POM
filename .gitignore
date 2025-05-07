@@ -24,9 +24,7 @@ wheels/
 # Poetry
 .venv/
 
-# Logs
-logs/
-*.log
+
 
 # IDE specific files
 .idea/
@@ -34,11 +32,19 @@ logs/
 *.swp
 *.swo
 
-# Ignore screenshots
-assets/screenshots/
+# Logs
+Logs/*
+!Logs/.gitkeep
+#Keep folders but ignore content
+Test-artifacts/screenshots/*
+!Test-artifacts/screenshots/.gitkeep
 
-# Ignore Allure reports
-Reports/
-reports/
-allure-results/
-allure-report/
+# Keep report folders but ignore content
+Reports/*
+!Reports/.gitkeep
+reports/*
+!reports/.gitkeep
+allure-results/*
+!allure-results/.gitkeep
+allure-report/*
+!allure-report/.gitkeep
