@@ -50,9 +50,6 @@ poetry install
 # Activate the virtual environment
 
 poetry shell
-
-# Run your tests
-poetry run behave
 ```
 
 ## Install Allure (if needed)
